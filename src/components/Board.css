@@ -1,0 +1,7 @@
+main.board {
+    margin-top: 1em;
+    padding: 1em;
+    background-image: url("../assets/abrasive-beige-surface.jpg");
+    width: 100%;
+    min-height: 8em;
+}

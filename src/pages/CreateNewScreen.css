@@ -1,0 +1,9 @@
+button.submitNew {
+    margin: 0em;
+    padding: 0.4em;
+    font-weight: bolder;
+    background-color: mediumorchid;
+}
+input {
+    margin: 1.5em;
+}
