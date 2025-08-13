@@ -16,13 +16,11 @@ type postResponse = {
 export default function HomeScreen() {
 
     const [description, setDescription] = useState<string>("");
-    //const [request, setRequest] = useState<postRequest>({"description":""});
     const nav = useNavigate();
 
     function handleSubmit(event:FormEvent<HTMLFormElement>) {
         event.preventDefault();
         console.log("current value of description: " + description);
-        //setRequest();
         postToDo();
         setDescription("");
         nav("/");
