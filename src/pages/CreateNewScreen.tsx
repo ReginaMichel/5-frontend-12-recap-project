@@ -3,15 +3,17 @@ import Header from "../components/Header";
 import { useNavigate } from "react-router-dom";
 import './CreateNewScreen.css'
 import axios from "axios";
+import {status} from '../types/StatusType'
 
-type postRequest = {
+/*type postRequest = {
     description: string;
+    status: StatusType;
 }
 type postResponse = {
     id: string;
     description: string;
-    status: string;
-}
+    status: StatusType;
+}*/
 
 export default function HomeScreen() {
 
@@ -26,7 +28,9 @@ export default function HomeScreen() {
         nav("/");
     }
     function postToDo() {
-        axios.post("api/todo",{"description":description}).then(r => console.log(r.data))
+        axios.post("api/todo",{
+            "description":description,"status":status.OPEN
+            }).then(r => console.log(r.data))
             .catch(e => console.log(e));
     }
 

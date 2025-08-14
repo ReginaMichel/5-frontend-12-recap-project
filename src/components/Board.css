@@ -4,4 +4,5 @@ main.board {
     background-image: url("../assets/abrasive-beige-surface.jpg");
     width: 100%;
     min-height: 8em;
+    display: flex;
 }
