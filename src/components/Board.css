@@ -1,8 +1,14 @@
 main.board {
-    margin-top: 1em;
+    margin-top: 0em;
     padding: 1em;
     background-image: url("../assets/abrasive-beige-surface.jpg");
-    width: 100%;
-    min-height: 8em;
+    width: auto;
+    min-height: 184px;
     display: flex;
+    flex-flow: wrap;
+}
+div.board {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
 }

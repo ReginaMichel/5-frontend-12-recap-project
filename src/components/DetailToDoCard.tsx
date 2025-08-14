@@ -35,6 +35,11 @@ export default function DetailToDoCard(props:Readonly<ToDoCardProps>) {
         }).then(r => console.log(r.data))
             .catch(e => console.log(e))
     }
+    function onClickDelete(){
+        axios.delete("api/todo/"+props.id).then(r => console.log(r.data))
+            .catch(e => console.log(e))
+            .then(() => nav("/"))
+    }
 
     const nav = useNavigate();
     function onClickCard() {
@@ -48,6 +53,7 @@ export default function DetailToDoCard(props:Readonly<ToDoCardProps>) {
                 <h3>Status: {props.status}</h3>
                 <div className="buttons">
                     <button className={"left"} onClick={onClickLeft}></button>
+                    <button className={"trash"} onClick={onClickDelete}></button>
                     <button className={"right"} onClick={onClickRight}></button>
                 </div>
             </main>
