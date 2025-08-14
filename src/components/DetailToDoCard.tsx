@@ -49,9 +49,9 @@ export default function DetailToDoCard(props:Readonly<ToDoCardProps>) {
                 <h2>{props.description}</h2>
                 <h3>Status: {props.status}</h3>
                 <div className="buttons">
-                    <button className={"left"} onClick={onClickLeft}></button>
+                    {props.status === status.OPEN ? <></> : <button className={"left"} onClick={onClickLeft}></button>}
                     <button className={"trash"} onClick={onClickDelete}></button>
-                    <button className={"right"} onClick={onClickRight}></button>
+                    {props.status === status.DONE ? <></> : <button className={"right"} onClick={onClickRight}></button>}
                 </div>
             </main>
         </>

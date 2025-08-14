@@ -51,10 +51,10 @@ export default function ToDoCard(props:Readonly<ToDoCardProps>) {
             <main className="card">
                 <h3>{props.description}</h3>
                 <div className="buttons">
-                    <button className={"left"} onClick={onClickLeft}></button>
+                    {props.status === status.OPEN ? <></> : <button className={"left"} onClick={onClickLeft}></button>}
                     <button className={"pencil"} onClick={onClickEdit}></button>
                     <button className={"trash"} onClick={onClickDelete}></button>
-                    <button className={"right"} onClick={onClickRight}></button>
+                    {props.status === status.DONE ? <></> : <button className={"right"} onClick={onClickRight}></button>}
                 </div>
             </main>
         </>

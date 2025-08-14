@@ -30,28 +30,37 @@ div.buttons {
 }
 
 button.left, button.right, button.trash, button.pencil{
-    margin: 0.05em;
+    margin: 0em;
     background-size: contain;
     background-repeat: no-repeat;
     background-color: transparent;
+    padding: 0.5em;
 }
 button.left {
     margin-top: 0.8em;
     background-image: url("../assets/arrow-left.png");
+    width: 22%;
 }
 button.right{
     margin-top: 0.3em;
     background-image: url("../assets/arrow-right.png");
+    width: 22%;
+}
+button.invisible{
+    visibility: hidden;
+    width: 22%;
 }
 button.trash{
     background-image: url("../assets/trash.png");
     background-position: center;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
+    width: 28%;
 }
 button.pencil{
     background-image: url("../assets/pencil.png");
     background-position: center;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
+    width: 28%;
 }
