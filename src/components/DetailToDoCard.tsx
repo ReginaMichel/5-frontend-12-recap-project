@@ -9,7 +9,7 @@ type ToDoCardProps = {
     status: StatusType
 }
 
-export default function ToDoCard(props:Readonly<ToDoCardProps>) {
+export default function DetailToDoCard(props:Readonly<ToDoCardProps>) {
 
     function onClickLeft(){
         let newStatus:StatusType = status.OPEN;
@@ -43,8 +43,9 @@ export default function ToDoCard(props:Readonly<ToDoCardProps>) {
 
     return (
         <>
-            <main className="card" onClick={onClickCard}>
-                <h3>{props.description}</h3>
+            <main className="detailcard" onClick={onClickCard}>
+                <h2>{props.description}</h2>
+                <h3>Status: {props.status}</h3>
                 <div className="buttons">
                     <button className={"left"} onClick={onClickLeft}></button>
                     <button className={"right"} onClick={onClickRight}></button>

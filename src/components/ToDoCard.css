@@ -3,11 +3,25 @@ main.card {
     padding: 1em;
     background-image: url("../assets/pink.png");
     background-size: contain;
+    background-repeat: no-repeat;
     width: 121px;
     height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+main.detailcard {
+    margin: 1em;
+    padding: 1em;
+    background-image: url("../assets/pink.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 363px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 div.buttons {
