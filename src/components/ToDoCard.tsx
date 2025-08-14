@@ -52,7 +52,7 @@ export default function ToDoCard(props:Readonly<ToDoCardProps>) {
                 <h3>{props.description}</h3>
                 <div className="buttons">
                     <button className={"left"} onClick={onClickLeft}></button>
-                    <button className={"pensil"} onClick={onClickEdit}></button>
+                    <button className={"pencil"} onClick={onClickEdit}></button>
                     <button className={"trash"} onClick={onClickDelete}></button>
                     <button className={"right"} onClick={onClickRight}></button>
                 </div>

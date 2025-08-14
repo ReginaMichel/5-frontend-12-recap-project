@@ -42,13 +42,10 @@ export default function DetailToDoCard(props:Readonly<ToDoCardProps>) {
     }
 
     const nav = useNavigate();
-    function onClickCard() {
-        nav("/"+props.id);
-    }
 
     return (
         <>
-            <main className="detailcard" onClick={onClickCard}>
+            <main className="detailcard">
                 <h2>{props.description}</h2>
                 <h3>Status: {props.status}</h3>
                 <div className="buttons">
